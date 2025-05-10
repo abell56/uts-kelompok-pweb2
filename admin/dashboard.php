@@ -16,7 +16,11 @@
       <nav>
         <ul>
           <li class="mb-4">
-            <a href="index.php" class="block px-4 py-2 rounded bg-blue-600 hover:bg-blue-500">Daftar Faskes</a>
+            <a href="dashboard.php" class="block px-4 py-2 rounded bg-blue-600 hover:bg-blue-500">Daftar Faskes</a>
+            <br>
+            <a href="informasi_kesehatan.php" class="btn btn-success block px-4 py-2 rounded bg-blue-600 hover:bg-blue-500">Conten</a>
+            <br>
+            <a href="about.php" class="btn btn-success block px-4 py-2 rounded bg-blue-600 hover:bg-blue-500">About </a>
           </li>
         </ul>
       </nav>
