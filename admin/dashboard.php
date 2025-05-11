@@ -66,7 +66,7 @@
                       <td class='border px-4 py-2'><a href='{$row['website']}' target='_blank' class='text-blue-600 underline'>{$row['website']}</a></td>
                       <td class='border px-4 py-2'>{$row['email']}</td>
                       <td class='border px-4 py-2'>{$row['rating']}</td>
-                      <td class='border px-4 py-2'>{$row['nama_kabkota']}</td>
+                      <td class='border px-4 py-2'>{$row['kabkota']}</td>
                       <td class='border px-4 py-2'>{$row['longitude']}</td>
                       <td class='border px-4 py-2'>{$row['latitude']}</td>
                       <td class='border px-4 py-2'>{$row['nama_jenis']}</td>

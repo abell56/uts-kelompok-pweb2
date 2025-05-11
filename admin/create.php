@@ -6,7 +6,7 @@ $jenis = $pdo->query("SELECT * FROM jenis_faskes")->fetchAll();
 $kategori = $pdo->query("SELECT * FROM kategori")->fetchAll();
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $stmt = $pdo->prepare("INSERT INTO faskes (nama, nama_pengelola, alamat, website, email, rating, kabkota, longitude, latitude, jenis_faskes, kategori)
+    $stmt = $pdo->prepare("INSERT INTO faskes (nama, nama_pengelola, alamat, website, email, rating, Kabkota_id, longitude, latitude, jenis_faskes_id, kategori_id1)
                            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->execute([
         $_POST['nama'],
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $_POST['jenis_faskes'],
         $_POST['kategori']
     ]);
-    header("Location: index.php");
+    header("Location: dashboard.php");
     exit();
 }
 ?>
